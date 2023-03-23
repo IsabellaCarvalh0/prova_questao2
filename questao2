@@ -1,0 +1,9 @@
+codigo_user=int(input('Digite seu código de usuário: ')) #variável para que o usuário digite seu código
+if codigo_user==1234:#testa se o código do usuário é igual ao código predefinido e, se for, ele pede a senha
+    senha=int(input('Digite sua senha: '))
+    if senha==9999:#testa se a senha do usuário é igual à senha predefinida e, se sim, permite acesso
+        print('Acesso permitido!')
+    else:#se a senha for qualquer uma que não seja a senha predefinida, ele mostra a mensagem de senha incorreta
+        print('Senha incorreta!')
+else:#se o código que o usuário degitar for qualquer um que não seja igual ao código predefinido ele mostra a mensagem de usuário inválido
+    print('Usuário inválido!')
